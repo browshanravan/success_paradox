@@ -11,3 +11,15 @@ In this project I employ `OOP`, `Monte Carlo` and `Agentic` simulation methodolo
 The crux of this project comes down to every person has a luck score and a talent score. 
 
 In this project scores from a `uniform` or `normal` distributions will be picked to see how much any changes in luck will influence success.
+
+## Getting started
+
+You can pull this package and run it in devcontainers in your VSCode.
+
+Otherwise run the app by installing `python 3.10` using conda.
+
+The easiest way to run the app is to go to the local directory of this repo and execute:
+
+```console
+pip3 install -r requirements.txt
+```
