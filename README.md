@@ -8,4 +8,6 @@ It puts forward and interesting question, namely, how influential is luck in suc
 
 In this project I employ `OOP`, `Monte Carlo` and `Agentic` simulation methodology to see how much luck plays a role in success.
 
-The crux of this project comes down to every person as a luck score and a talent score. I will pick these scores from a `uniform` or `normal` distribution and see how much any changes in luck will influence success.
+The crux of this project comes down to every person has a luck score and a talent score. 
+
+In this project scores from a `uniform` or `normal` distributions will be picked to see how much any changes in luck will influence success.
