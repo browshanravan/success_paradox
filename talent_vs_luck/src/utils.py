@@ -26,16 +26,18 @@ class MonteCarlo:
     def __init__(self, agent_type, total_number_of_participants, required_number_of_participants):
         self.total_number_of_participants= total_number_of_participants
         self.required_number_of_participants= required_number_of_participants
-        self.percentage_talent_contribution= np.linspace(start= 1, stop= 0.5, num= 10)
+        self.percentage_talent_contribution= np.linspace(start= 1, stop= 0.95, num= 10)
         if agent_type == "UniformAgent":
-            self.agent= [UniformAgent() for _ in range(self.total_number_of_participants)]
+            self.talent= [UniformAgent() for _ in range(self.total_number_of_participants)]
+            self.luck= [UniformAgent() for _ in range(self.total_number_of_participants)]
         if agent_type == "GaussianAgent":
-            self.agent= [GaussianAgent() for _ in range(self.total_number_of_participants)]
+            self.talent= [GaussianAgent() for _ in range(self.total_number_of_participants)]
+            self.luck= [GaussianAgent() for _ in range(self.total_number_of_participants)]
     
 
     def adjusted_talent_luck(self, percentage_talent, percentage_luck):
-        talent= percentage_talent * np.array([i.pull() for i in self.agent])
-        luck= percentage_luck * np.array([i.pull() for i in self.agent])
+        talent= percentage_talent * np.array([i.pull() for i in self.talent])
+        luck= percentage_luck * np.array([i.pull() for i in self.luck])
         return talent, luck
     
 
@@ -60,7 +62,7 @@ class MonteCarlo:
 
 def plot_data(dataframe):
 
-    plt.plot(dataframe)
+    plt.plot(dataframe, linewidth=1, marker="o")
     plt.gca().invert_xaxis()
     plt.xlabel("% Talent Contribution")
     plt.ylabel("# of Participants Selected")

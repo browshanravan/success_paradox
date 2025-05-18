@@ -4,13 +4,15 @@ A Monte Carlo and agent based exploration into how much luck plays a role in suc
 ## About this project
 Some time ago I came across [Is Success Luck or Hard Work?](https://www.youtube.com/watch?v=3LopI4YeC4I) video by `Veritasium`.
 
-It puts forward and interesting question, namely, how influential is luck in success?
+It puts forward and interesting question, namely, how influential is talent/luck in success?
 
-In this project I employ `OOP`, `Monte Carlo` and `Agentic` simulation methodology to see how much luck plays a role in success.
+This project employes `OOP`, `Monte Carlo` and `Agentic` simulation methodology to see how much talent/luck plays a role in success.
 
 The crux of this project comes down to every person has a luck score and a talent score. 
 
-In this project scores from a `uniform` or `normal` distributions will be picked to see how much any changes in luck will influence success.
+These scores can come from either a `uniform` or `normal` distribution. The ploted data shows how many people are selected (successful) as the percentage talent contribution changes.
+
+The observations suggest the luck/talent contribution to success can vary depending on the distribution the scores come from.
 
 ## Getting started
 
