@@ -8,11 +8,13 @@ It puts forward and interesting question, namely, how influential is talent/luck
 
 This project employes `OOP`, `Monte Carlo` and `Agentic` simulation methodology to see how much talent/luck plays a role in success.
 
-The crux of this project comes down to every person has a luck score and a talent score. 
+The crux of this project comes down to every person having a luck score and a talent score. 
 
 These scores can come from either a `uniform` or `normal` distribution. The ploted data shows how many people are selected (successful) as the percentage talent contribution changes.
 
 The observations suggest the luck/talent contribution to success can vary depending on the distribution the scores come from.
+
+You can change `agent_type` argument in `main.py` to see the effect.
 
 ## Getting started
 
