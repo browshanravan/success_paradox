@@ -60,12 +60,30 @@ class MonteCarlo:
 
 
 
-def plot_data(dataframe):
+def plot_data(data):
 
-    plt.plot(dataframe, linewidth=1, marker="o")
+    plt.rcParams['axes.spines.left'] = False
+    plt.rcParams['axes.spines.right'] = False
+    plt.rcParams['axes.spines.top'] = False
+    plt.rcParams['axes.spines.bottom'] = False
+    plt.rcParams['xtick.bottom'] = False
+    plt.rcParams['ytick.left'] = False
+
+    plt.plot(data, color="tab:orange", linewidth=1, marker="o", markersize=6, ls="--", markeredgecolor="w", markeredgewidth=1.3)
     plt.gca().invert_xaxis()
     plt.xlabel("% Talent Contribution")
     plt.ylabel("# of Participants Selected")
+
+    for x,y in zip(data.index, data.values):
+
+        label = "{:.2f}".format(y)
+
+        plt.annotate(label,
+                    (x,y),
+                    textcoords="offset points",
+                    xytext=(0,10),
+                    ha='center'
+                    )
 
     plt.tight_layout()
     plt.show()

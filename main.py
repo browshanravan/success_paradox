@@ -1,4 +1,4 @@
-from talent_vs_luck.src.utils import (
+from success_paradox.src.utils import (
     MonteCarlo,
     plot_data,
 )
@@ -32,4 +32,4 @@ with concurrent.futures.ProcessPoolExecutor() as executor:
 
 df= pd.DataFrame(data= results).mean()
 
-plot_data(dataframe=df)
+plot_data(data=df)
