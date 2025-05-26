@@ -57,17 +57,11 @@ This Python package simulates populations of “agents” endowed with talent an
 
 1. Clone the repository  
    ```bash
-   git clone https://github.com/behzadrowshanravan/success_paradox.git
+   git clone https://github.com/browshanravan/success_paradox.git
    cd success_paradox
    ```
 
-2. (Optional) Create and activate a Conda environment  
-   ```bash
-   conda env create -f environment.yml
-   conda activate biokit_env
-   ```
-
-3. Install Python dependencies  
+2. Install Python dependencies  
    ```bash
    pip install -r requirements.txt
    ```
@@ -135,7 +129,6 @@ Please ensure your code follows PEP 8 style and includes appropriate tests or ex
 ├── README.md
 ├── main.py
 ├── requirements.txt
-├── environment.yml
 ├── .devcontainer/
 │   ├── Dockerfile
 │   └── devcontainer.json
