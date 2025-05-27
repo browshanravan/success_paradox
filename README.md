@@ -50,7 +50,7 @@ This Python package simulates populations of “agents” endowed with talent an
 
 ### Prerequisites
 
-- Python 3.10  
+- Python 3.10 or higher
 - git (to clone the repo)  
 
 ### Installation
