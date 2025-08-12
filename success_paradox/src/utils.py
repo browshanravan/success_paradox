@@ -60,6 +60,14 @@ class MonteCarlo:
 
 
 
+def run_parallel_monte_carlo_simulation(agent_type, total_number_of_participants, required_number_of_participants):
+    '''
+    In order to be able to run the simulation in parallel, a function must be used.
+    '''
+    return MonteCarlo(agent_type= agent_type, total_number_of_participants= total_number_of_participants, required_number_of_participants=required_number_of_participants).simulation()
+
+
+
 def plot_data(data):
 
     plt.rcParams['axes.spines.left'] = False
